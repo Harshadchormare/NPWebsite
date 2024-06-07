@@ -1,0 +1,538 @@
+/* Reset and Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 5px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #0054A6;
+    font-weight: bold;
+}
+
+/* Scrolling Strip Styles */
+.scrolling-strip {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #FF7C01;
+    color: white;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px;
+}
+
+.scrolling-strip p {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+.highlight {
+    color: #0054A6;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.description {
+    font-size: 16px;
+    color: #333333;
+}
+
+.price {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    color: #333;
+}
+
+.features li {
+    margin: 10px 0;
+}
+
+.course-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Video Content Styles */
+.video-content {
+    max-width: 1000px;
+    width: 200%;
+    margin-left: 40px;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 200%;
+    border-radius: 30px;
+}
+
+.video-play-button {
+    position: absolute;
+    top: 62%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Blinking Text Effect */
+.blinking-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0054A6;
+    animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Instructor Section Styles */
+.instructor-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: linear-gradient(to right, #F0F0F0, #CCCCCC);
+    border-radius: 15px;
+    margin: 50px;
+}
+
+.instructor-image img {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+}
+
+.instructor-info {
+    margin-left: 30px;
+    text-align: left;
+    color: #000;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #ff7c01, #b8035d, #d101d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description {
+    font-size: 1.1em;
+    margin: 20px 0;
+}
+
+.credentials {
+    font-size: 2em;
+}
+
+.linkedin-button {
+    display: inline-block;
+    background-color: #0077b5;
+    color: #fff;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 40px;
+    margin-top: 0;
+}
+
+.instructor-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.instructor-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 300%; /* Adjust based on the number of instructors */
+}
+
+.instructor-section {
+    flex: 1 0 100%; /* Show one instructor at a time */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.instructor-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.scroll-button.left {
+    left: 10px;
+}
+
+.scroll-button.right {
+    right: 10px;
+}
+
+/* Course Schedule Styles */
+.course-schedule {
+    margin-top: 40px;
+}
+
+.course-schedule h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #00b853;
+    padding: 20px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #0077b5;
+    color: #fffdfd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ffc773;
+}
+
+/* Testimonial Section Styles */
+.testimonial-section {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    background: linear-gradient(to left, #F0F0F0, #CCCCCC);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.testimonial-image img {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.testimonial-content {
+    flex: 1;
+}
+
+.testimonial-text {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    color: #e91e62;
+}
+
+/* Logo Marquee Styles */
+.logo-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo-track {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+}
+
+.logo-track img {
+    display: inline-block;
+    margin: 0 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Container Section Styles */
+.container-1 {
+    text-align: center;
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-1 h1 {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.container-1 .highlight {
+    color: #ff4500;
+}
+
+.container-1 p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.container-1 .buttons {
+    margin-bottom: 2rem;
+}
+
+.container-1 .btn {
+    padding: 1rem 2rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container-1 .primary {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+.container-1 .secondary {
+    background-color: transparent;
+    color: #ff4500;
+    border: 2px solid #ff4500;
+}
+
+.image-carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-line {
+    border-top: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.footer-content .copyright-info {
+    text-align: center;
+}
+
+.footer-content .copyright-info p {
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-content ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-content ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Question Section Styles */
+.question-section {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.question-button, .faq-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px; /* Add margin to separate buttons */
+}
+
+.faq-button {
+    background-color: #008CBA; /* Change color for FAQ button */
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    bottom: 100%; /* Set the dropdown content to appear above the button */
+}
+
+.question-section {
+    position: fixed; /* Ensure the dropdown content is positioned relative to this element */
+    display: inline-block; /* Ensure the button and dropdown content are aligned properly */
+}
