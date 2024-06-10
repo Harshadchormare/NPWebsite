@@ -1,16 +1,8 @@
 /* Reset and Global Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
-
-/* Header Styles */
 header {
     background-color: #fff;
     border-bottom: 1px solid #e5e5e5;
-    padding: 5px 0;
+    padding: 10px 0; /* Adjust the padding to reduce the height */
 }
 
 header .container {
@@ -24,6 +16,11 @@ header .container {
     z-index: 2;
     margin: 0;
     padding: 0;
+}
+
+.logo img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
 }
 
 header nav ul {
@@ -43,6 +40,7 @@ header nav ul li a {
     color: #0054A6;
     font-weight: bold;
 }
+
 
 /* Scrolling Strip Styles */
 .scrolling-strip {
@@ -442,97 +440,170 @@ tbody tr:hover {
     width: 100%;
     height: auto;
 }
-
-/* Footer Styles */
-footer {
-    background-color: #f5f5f5;
-    padding: 20px 0;
-    text-align: center;
+/* Testimonial Section Styles */
+.testimonial-section {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to left, #F0F0F0, #CCCCCC);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
+.testimonial-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.testimonial-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.testimonial-content {
+    flex: 1;
+}
+
+.testimonial-text {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e91e62;
+}
+
+/* Add keyframes for auto-scrolling */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-300%); }
+}
+
+.contact-section {
+    text-align: left;
+}
+
+#contact-form {
+    display: flex ;
+    
+
+}
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid #9af8ff;
+}
+
+#contact-form button {
+    padding: 10px,15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #0056b3;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 5px;
+}
+/* Footer Styles */
 .footer-line {
-    border-top: 1px solid #ddd;
-    margin-bottom: 5px;
+    width: 100%;
+    height:2px;
+    background-color: #ccc;
+    margin-top: 20px;
 }
 
 .footer-content {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
 }
 
 .footer-content img {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
+    width: 160px;
+    height: 160px;
 }
 
 .footer-content .copyright-info {
     text-align: center;
 }
 
-.footer-content .copyright-info p {
-    margin-bottom: 10px;
-}
-
 .footer-content ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .footer-content ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.footer-content ul li:last-child {
-    margin-right: 0;
+    display: inline-flex;
+    margin-left: 10px;
 }
 
 .footer-content ul li a {
-    color: #333;
     text-decoration: none;
+    color: #007bff;
 }
 
 .footer-content ul li a:hover {
     text-decoration: underline;
-}
-
-/* Question Section Styles */
-.question-section {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-}
-
-.question-button, .faq-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 5px; /* Add margin to separate buttons */
-}
-
-.faq-button {
-    background-color: #008CBA; /* Change color for FAQ button */
-}
-
-.dropdown-content {
-    position: absolute;
-    display: none;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    bottom: 100%; /* Set the dropdown content to appear above the button */
-}
-
-.question-section {
-    position: fixed; /* Ensure the dropdown content is positioned relative to this element */
-    display: inline-block; /* Ensure the button and dropdown content are aligned properly */
 }
