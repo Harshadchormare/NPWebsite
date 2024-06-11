@@ -1,15 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const container = document.querySelector('.testimonial-container');
-    const testimonials = document.querySelectorAll('.testimonial');
-    let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    var testimonials = document.querySelectorAll('.testimonial');
+    var index = 0;
 
-    function scrollTestimonials() {
-        currentIndex++;
-        if (currentIndex >= testimonials.length) {
-            currentIndex = 0;
-        }
-        container.style.transform = `translateX(-${currentIndex * 100}%)`;
+    function showNextTestimonial() {
+        testimonials.forEach(function(testimonial) {
+            testimonial.style.display = 'none';
+        });
+        testimonials[index].style.display = 'block';
+        index = (index + 1) % testimonials.length;
     }
 
-    setInterval(scrollTestimonials, 3000); // Adjust the interval time as needed
+    // Show the first testimonial initially
+    showNextTestimonial();
+
+    // Auto-scroll testimonials every 5 seconds
+    setInterval(showNextTestimonial, 5000);
 });
+
