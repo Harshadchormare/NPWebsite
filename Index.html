@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap">
 </head>
 <body>
+    <!-- Header with Logo -->
     <header>
         <div class="logo">
             <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/04/1516823505878.png" alt="Logo">
         </div>
+        <!-- Scrolling Strip -->
         <div class="scrolling-strip">
             <p>Enroll before 25th June to get Early Bird Discount.</p>
         </div>
@@ -20,7 +22,6 @@
     <main>
         <div class="container main-content">
             <div class="text-content">
-                <!-- Your main content here -->
                 <p class="highlight">Become a GEN AI Expert without the crippling debt</p>
                 <h1>Complete GEN AI knowledge for the price of lunch</h1>
                 <p class="description">
@@ -46,7 +47,6 @@
                 </div>
             </div>
             <div class="video-content">
-                <!-- Your video content here -->
                 <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/05/what-is-gen-ai-1200x675-1.png" alt="GEN AI Course" class="video-thumbnail">
                 <a href="https://youtu.be/WyVgQca9oys?si=_bf7C1lHp6wDldFx" class="video-play-button" target="_blank">
                     <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/05/istockphoto-1382122980-612x612-removebg-preview-removebg-preview.png" alt="Play">
@@ -59,8 +59,6 @@
     <section class="instructor-carousel">
         <button class="scroll-button left" onclick="scrollInstructors('left')">←</button>
         <div class="instructor-container">
-            <!-- Instructor sections go here -->
-            <!-- Each instructor section follows this structure -->
             <div class="instructor-section">
                 <div class="instructor-image">
                     <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/06/1697284080683.jpg" alt="Siddhesh Joglekar">
@@ -75,10 +73,36 @@
                     <a href="https://www.linkedin.com/in/siddheshj/?originalSubdomain=in" class="linkedin-button">LinkedIn</a>
                 </div>
             </div>
-            <!-- Repeat the above structure for each instructor -->
+            <div class="instructor-section">
+                <button class="scroll-button left disabled">Left</button>
+                <div class="instructor-image">
+                    <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/06/1594555791303.jpg" alt="Instructor 2">
+                </div>
+                <div class="instructor-info">
+                    <p class="subtitle">Your new instructor is not just an instructor</p>
+                    <h1>Meet your new <br>GEN AI instructor</h1>
+                    <p class="description"> Chief Strategy Officer at VegaHR and Global Delivery Head at Polestar Solutions, has over 15 years of management consulting experience. He specializes in AI and analytics for Fortune 500 companies and holds a PG Diploma in AI/ML from IIIT Bangalore and a PGDM from IIM Lucknow. Renowned for his expertise in data analytics and business strategy, Laxmi combines technological knowledge with strategic acumen. As an educator and mentor, he is dedicated to sharing his insights in Python, AI, and ML to help students and professionals excel in the technology field.</p>
+                    <p class="credentials">Laxmi Narayanan G.</p>
+                    <a href="https://www.linkedin.com/in/avadhoot-jathar" class="linkedin-button">LinkedIn</a>
+                </div>
+            </div>
+            <div class="instructor-section">
+                <div class="instructor-image">
+                    <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/06/1594555791303.jpg" alt="Instructor 3">
+                </div>
+                <div class="instructor-info">
+                    <p class="subtitle">Your new instructor is not just an instructor</p>
+                    <h1>Meet your new <br>GEN AI instructor</h1>
+                    <p class="description">A seasoned data science professional and Senior Data Scientist at Kantar since June 2019. Previously, he was the Chief Data Scientist at Impact Analytics. With doctoral credentials from IIM Bangalore in Quantitative Marketing, his experience spans across price elasticity studies, market mix models, and other marketing analytics aspects. He has co-authored a book, "Marketing Analytics," demonstrating his industry-wide expertise and contribution.</p>
+                    <p class="credentials">Avdhoot Jathar</p>
+                    <a href="https://www.linkedin.com/in/avadhoot-jathar" class="linkedin-button">LinkedIn</a>
+                </div>
+            </div>
         </div>
         <button class="scroll-button right" onclick="scrollInstructors('right')">→</button>
     </section>
+    <script src="instructorcarousel.js"></script>
+
 
     <!-- Instructor Info Section -->
     <section class="marquee-info">
@@ -87,17 +111,18 @@
     <!-- Logo Marquee Section -->
     <section class="logo-marquee">
         <div class="logo-track">
-            <!-- Logo images go here -->
             <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/05/favicon-512x512-1.webp?resize=160%2C160" alt="Company 1 Logo">
             <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/05/images-1.png?resize=160%2C160" alt="Company 2 Logo">
             <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/05/1631370857735.jpg?resize=160%2C160" alt="Company 3 Logo">
-            <!-- Add more logo images as needed -->
+            <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/05/117247-104089-hansa.jpg?resize=160%2C160" alt="Company 4 Logo">
+            <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/05/images-2.png?resize=160%2C160" alt="Company 5 Logo">
+            <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/05/images-3.png?resize=160%2C160" alt="Company 6 Logo">
+            <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/05/images-4.png?resize=160%2C160" alt="Company 7 Logo">
         </div>
     </section>
 
     <!-- Course Schedule Section -->
     <section class="course-schedule">
-        <!-- Course schedule table goes here -->
         <h2>GEN AI Course Syllabus</h2>
         <table>
             <thead>
@@ -111,7 +136,6 @@
             </thead>
             <tbody>
                 <tr>
-                    <!-- Course schedule rows go here -->
                     <td>August 3, 2024</td>
                     <td>AI Enhanced Content & Communication (Part-I)</td>
                     <td>04:00 PM - 06:00 PM</td>
@@ -152,14 +176,13 @@
                     <td>02:00 PM - 05:00 PM</td>
                     <td>On-Campus (Khandala)</td>
                     <td>Group Project on Developing AI & Gen AI driven strategies/Group Presentations/Closing Remarks</td>
-             </tr>
+                </tr>
             </tbody>
         </table>
     </section>
 
     <!-- Testimonial Section -->
     <section class="testimonial-section">
-        <!-- Testimonial content goes here -->
         <div class="testimonial-image">
             <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/06/whatsapp-image-2024-05-29-at-11.16.24-am.jpg" alt="Testimonial">
         </div>
@@ -174,7 +197,7 @@
         </div>
     </section>
 
-    <!-- Section for the "Loved by Students" -->
+    <!-- Loved by Students Section -->
     <section class="container-1">
         <h1>Loved by <span class="highlight">13,992</span> students</h1>
         <p>Hours of step-by-step on-demand video classes ready when you are.</p>
@@ -191,12 +214,10 @@
                 <!-- Add more images as needed -->
             </div>
         </div>
-        <script src="studentreview.js"></script>
+        <script src="carousel.js"></script>
     </section>
-
-    <!-- Testimonial Section -->
-    <section class="testimonial-section">
-        <!-- Testimonial content goes here -->
+     <!-- Testimonial Section -->
+     <div class="testimonial-section">
         <div class="testimonial-container">
             <div class="testimonial">
                 <div class="testimonial-image">
@@ -226,42 +247,45 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <h2>You still have Questions?</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <script src="studentsreview.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
+<section class="contact-section">
+    <h2>You still have Questions?</h2>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="Phone">Phone:</label>
-            <input type="number" id="Phone" name="Phone" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+        <label for="Phone">Phone:</label>
+        <input type="number" id="Phone" name="Phone" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+</section>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-line"></div>
-        <div class="footer-content">
-            <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/04/1516823505878.png?resize=160%2C160" alt="Northpoint Logo">
-            <div class="copyright-info">
-                <p>© 2024 Northpoint. All rights reserved.</p>
-                <ul>
-                    <li><a href="https://www.northpointindia.com/privacy-policy/">Privacy Policy</a></li>
-                    <li><a href="https://www.northpointindia.com/terms-conditions/">Terms of Service</a></li>
-                </ul>
-            </div>
+   <!-- Footer Section -->
+   <footer>
+    <div class="footer-line"></div>
+    <div class="footer-content">
+        <img src="https://adsdekhouat.wordpress.com/wp-content/uploads/2024/04/1516823505878.png?resize=160%2C160" alt="Northpoint Logo">
+        <div class="copyright-info">
+            <p>© 2024 Northpoint. All rights reserved.</p>
+            <ul>
+                <li><a href="https://www.northpointindia.com/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="https://www.northpointindia.com/terms-conditions/">Terms of Service</a></li>
+            </ul>
         </div>
-    </footer>
+    </div>
+</footer>
 </body>
 </html>
 
+      
