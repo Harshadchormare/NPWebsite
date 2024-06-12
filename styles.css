@@ -363,16 +363,15 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* Instructor ratings */
 .section {
     display: flex;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100;
 }
 
 .left {
     flex: 1;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -380,7 +379,6 @@ body {
 
 .right {
     flex: 1;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,8 +389,6 @@ body {
     height: auto;
     border-radius: 10px;
 }
-
-
 
 /* institute section container */
 
