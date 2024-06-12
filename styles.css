@@ -243,19 +243,7 @@ h1 {
     border-radius: 40px;
     margin-top: 0;
 }
-.blinking {
-    animation: blink-animation 1s infinite;
-      color: blue; 
-  text-align:center;
-}
 
-@keyframes blink-animation {
-    0%, 50%, 100% {
-        opacity: 1;
-    }
-    25%, 75% {
-        opacity: 2;
-    }
 .instructor-carousel {
     display: flex;
     justify-content: left;
@@ -385,9 +373,10 @@ tbody tr:hover {
 .logo-track img {
     display: inline-block;
     margin: 0 10px;
-    width: 200px;
+    width: 100px;
     height: 100px;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 @keyframes marquee {
