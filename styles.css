@@ -657,3 +657,18 @@ body {
 .footer-content ul li a:hover {
     text-decoration: underline;
 }
+.blinking {
+    animation: blink-animation 1s infinite;
+      color: blue; 
+  text-align:center;
+}
+
+@keyframes blink-animation {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 2;
+    }
+}
+
