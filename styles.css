@@ -635,6 +635,7 @@ body {
 .footer-content ul li {
     display: inline-flex;
     margin-left: 10px;
+    text-align: center;
 }
 
 .footer-content ul li a {
