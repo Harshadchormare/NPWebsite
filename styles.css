@@ -358,50 +358,41 @@ tbody tr:hover {
     height: auto;
 }
 
-/* Logo Marquee Styles */
-.logo-marquee {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.logo-track {
-    display: inline-block;
-    animation: marquee 20s linear infinite;
-}
-
-.logo-track img {
-    display: inline-block;
-    margin: 0 10px;
-    width: 200px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.image-carousel {
-    width: 100%;
-    overflow: hidden;
-}
-
-.images {
+.section {
     display: flex;
-    transition: transform 0.5s ease;
+    width: 100%;
+    min-height: 100vh;
 }
 
-.images img {
-    width: 100%;
-    height: auto;
+.left {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.right {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
 
 /* institute section container */
 
