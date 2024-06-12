@@ -373,7 +373,7 @@ tbody tr:hover {
 .logo-track img {
     display: inline-block;
     margin: 0 10px;
-    width: 100px;
+    width: 200px;
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
