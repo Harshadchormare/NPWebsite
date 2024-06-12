@@ -105,7 +105,11 @@ h1 {
     font-size: 36px;
     line-height: 1.2;
 }
-
+.cousre-description{
+    font-size: 16px;
+    color: #333333;
+    text-align: justify;
+}
 .description {
     font-size: 16px;
     color: #333333;
@@ -445,8 +449,12 @@ tbody tr:hover {
     100% { transform: translateX(0%); }
 }
 /*Student Testimonial Section*/
-
-testimonial-container {
+.testimonial-heading{
+    text-align: center;
+    color: #ff7c01;
+    
+}
+.testimonial-container {
         max-width: 600px; /* Adjust container width as needed */
         margin: 0 auto;
         overflow: hidden;
@@ -567,26 +575,26 @@ body {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
-  }
+}
 
-  .modal-content {
+.modal-content {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     border-radius: 10px;
     max-width: 600px;
-  }
-  
-  /* Close button styles */
-  .close {
+    position: relative; /* Ensure close button position is relative to modal content */
+}
+
+/* Close button styles */
+.close {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 20px;
     cursor: pointer;
-  }
-  
+}
   /* FAQ item styles */
   .faq-item {
     margin-bottom: 20px;
