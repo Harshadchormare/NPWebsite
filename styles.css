@@ -1,4 +1,8 @@
 /* Reset and Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 header {
     background-color: #fff;
     border-bottom: 1px solid #e5e5e5;
