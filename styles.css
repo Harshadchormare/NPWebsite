@@ -23,6 +23,8 @@ header {
 
 .left-logo {
     margin-right: auto; /* Pushes the left logo to the left */
+    width: 100px;
+    height: auto;
 }
 
 .right-logo {
