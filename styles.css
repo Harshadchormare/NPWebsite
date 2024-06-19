@@ -416,7 +416,6 @@ body {
     position: relative;
     overflow: hidden;
 }
-
 .image-carousel {
     width: 100%;
     overflow: hidden;
@@ -426,21 +425,22 @@ body {
 .images {
     display: flex;
     width: 400%; /* Adjust based on the number of images */
-    animation: slide s infinite;
+    animation: slide 60s infinite;
 }
 
 .images img {
     width: 25%; /* Adjust based on the number of images */
-    height: 15%;
+    height: auto; /* Ensure the aspect ratio is maintained */
 }
 
 @keyframes slide {
     0% { transform: translateX(0%); }
-    20% { transform: translateX(-25%); }
-    40% { transform: translateX(-50%); }
-    60% { transform: translateX(-75%); }
-    80% { transform: translateX(-100%); }
-    100% { transform: translateX(0%); }
+    16.67% { transform: translateX(0%); }
+    33.34% { transform: translateX(-25%); }
+    50.01% { transform: translateX(-25%); }
+    66.68% { transform: translateX(-50%); }
+    83.35% { transform: translateX(-50%); }
+    100% { transform: translateX(-75%); }
 }
 /*Student Testimonial Section*/
 .testimonial-heading{
