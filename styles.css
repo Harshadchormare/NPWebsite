@@ -140,6 +140,9 @@ h1 {
     flex-direction: column;
     align-items: center;
 }
+.course-features{
+    align-items: left;
+}
 
 .features {
     margin: 20px 0;
