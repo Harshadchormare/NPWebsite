@@ -426,12 +426,12 @@ body {
 .images {
     display: flex;
     width: 400%; /* Adjust based on the number of images */
-    animation: slide 30s infinite;
+    animation: slide s infinite;
 }
 
 .images img {
     width: 25%; /* Adjust based on the number of images */
-    height: auto;
+    height: 15%;
 }
 
 @keyframes slide {
