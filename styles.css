@@ -100,7 +100,7 @@ header nav ul li a {
 }
 
 .highlight {
-    color: #0054A6;
+    color:#00432D;
     font-weight: bold;
 }
 
@@ -189,7 +189,7 @@ h1 {
 .blinking-text {
     font-size: 24px;
     font-weight: bold;
-    color: #0054A6;
+    color: #00432D;
     animation: blinking 1s infinite;
 }
 
@@ -330,7 +330,7 @@ th, td {
 }
 
 thead th {
-    background-color: #0077b5;
+    background-color: #00432D;
     color: #fffdfd;
 }
 
@@ -348,7 +348,7 @@ tbody tr:hover {
     border-radius: 20px;
 }
 .title{
-    color: #FF7C01;
+    color: #00432D;
 }
 
 .left-column {
@@ -447,7 +447,7 @@ body {
 /*Student Testimonial Section*/
 .testimonial-heading{
     text-align: center;
-    color: #ff7c01;
+    color: #00432D;
     
 }
 .testimonial-container {
