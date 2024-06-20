@@ -27,7 +27,6 @@ header {
 
 .left-logo {
     margin-right: auto; /* Pushes the left logo to the left */
-    align-items: left;
 }
 
 .right-logo {
@@ -36,10 +35,9 @@ header {
 }
 
 .logo img {
-    width: 300px; /* Adjust the width as needed */
-    height: 100px; /* Maintain the aspect ratio */
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
 }
-
 header nav ul {
     list-style: none;
     display: flex;
