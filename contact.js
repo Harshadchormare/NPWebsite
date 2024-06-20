@@ -19,4 +19,4 @@ function closeForm() {
         document.getElementById('form-title').style.display = 'block';
         document.getElementById('thank-you-message').style.display = 'none';
     }
-</script>
+
